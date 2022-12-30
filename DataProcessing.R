@@ -189,7 +189,7 @@ DataA3 <- subset(Data,(Well %in% "A3"))
 
 DataA3<-DataA3[,c(2,4)]
 
-
+#noise level. minimum value difference e.g. if abs is -0.05 sigma = 0.05
 
 
 results_Bar4par <- Bayesfit(DataA1,model="Bar6par",inf.sigma=TRUE)
